@@ -1,0 +1,229 @@
+/*MENU BAR Style */
+
+/*Menu begin*/
+
+*{box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
+    overflow-x: hidden;
+}
+body{
+        background:url(pictures/backgnd.jpg);
+        background-size: cover;
+        background-attachment: fixed;    
+}
+
+/* Style tab links */
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 20%;
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+     
+}
+#Home {background-color: powderblue;}
+#1st {background-color: powderblue;}
+#2nd {background-color: powderblue;}
+#3rd {background-color: powderblue;}
+#4th {background-color: powderblue;}
+#5th {background-color: powderblue;}
+
+
+/*Menu End*/
+
+/*Text box style*/
+input[type=text],input[type=number],input[type=date] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: #d5f4e6;
+    color: black;
+}
+
+/* submit style button*/
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+
+}
+
+.button2:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+/*logout*/
+.logoutLblPos{
+    
+   position:relative;
+   right:10px;
+   top:5px;
+}
+.buttonstyl{
+
+   position:relative;
+   top:100px;
+
+}
+/* LEFT MENU1 for tab1 */
+
+
+/* Style the tab */
+.tab1 {
+    float: left;
+    background: rgba(18, 205, 239, 0.4); 
+    width: 15%;
+    height: auto;
+}
+
+/* Style the buttons inside the tab */
+.tab1 button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab1 button:hover {
+    background-color: white;
+}
+
+/* Create an active/current "tab button" class */
+.tab1 button.active {
+    background-color: yellowgreen;
+}
+
+/*END of left menu 1 tab*/
+
+/* LEFT MENU1 for studentinfo */
+
+.tabcontent1 {
+    float: right;
+    padding: 0px 12px;
+    width: 82%;
+    
+   background: rgba(180, 205, 23, 0.3); 
+}
+
+
+/*Left menu 2nd for fees*/
+
+
+/* Style the tab content */
+.tabcontent2 {
+    float: right;
+    padding: 0px 12px;
+    width: 82%;   
+      background: rgba(180, 205, 23, 0.3); 
+}
+
+
+/* left menu 3rd for ia marks*/
+
+
+/* Style the tab content */
+.tabcontent3 {
+    float: right;
+    padding: 0px 12px;
+    width: 82%;   
+   background: rgba(180, 205, 23, 0.3); 
+}
+
+/*For trasparent*/
+
+.blck{
+    float: left;
+    padding: 10px 12px;
+     width: 100%;
+    
+       background: rgba(180, 205, 23, 0.3);
+}
+
+/* drop dowm for delete*/
+
+
+.custom-select {
+  position: relative;
+  font-family: Arial;
+    color: black;
+  height:35px;width:100pt;
+  border: 1px solid transparent;
+  background: rgba(229,249,249,0.7);
+  font-size: 15px;
+ 
+}
+
+.custom-select:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/*For table design for iamakrs*/
+
+#marks {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#marks td, #marks th {
+    border: 1px solid ;
+    padding: 8px;
+}
+
+#marks tr:nth-child(even){background-color: #f2f2f2;}
+#marks tr:nth-child(odd){background-color: lightgrey;}
+
+ /*#marks tr:hover {background-color: #ddd;} */
+
+#marks th {
+    padding-top: 12px;
+    padding-bottom: 19px;
+    text-align: left;
+    background-color: #4CAF00;
+    color: white;
+}

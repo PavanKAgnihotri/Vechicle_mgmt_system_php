@@ -1,0 +1,346 @@
+body{
+        background:url(pictures/backgnd.jpg);
+        background-size: cover;
+        background-attachment: fixed;    
+}
+img{
+    box-shadow: 0pt 0pt 3pt black;
+}
+.dot {
+  height: 8px;
+  width: 8px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: black;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 1000px) {
+  .text {font-size: 13px}
+}
+/* End  style of slidebar */
+
+
+
+/*Menu begin style BEGIN*/
+
+
+
+/* Set height of body and the document to 100% */
+
+/* Style tab links */
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 20%;
+}
+.tablink:hover {
+    background-color: #777;
+}
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+}
+
+/*Menu End*/
+
+
+ /*Search facility style BEGIN */
+ 
+#regForm {
+  background: rgba(180, 205, 23, 0.3);
+  margin: 100px auto;
+  font-family: Raleway;
+  padding: 40px;
+  width: 70%;
+  height: 60%;
+  min-width: 300px;
+}
+h1 {
+  text-align: center;  
+}
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+input.invalid {
+  background-color: #ffdddd;
+}
+.tab {
+  display: none;
+}
+button {
+  background-color: #4CAF50;
+  color: #ffffff;
+  border: none;
+  padding: 15px 32px;
+  font-size: 17px;
+  font-family: Raleway;
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.8;
+}
+
+#prevBtn {
+  background-color: #bbbbbb;
+}
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+.step.active {
+  opacity: 1;
+}
+.step.finish {
+  background-color: #4CAF50;
+}
+/*End of search facility menu*/
+
+
+/*select custom radio begin*/
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+
+}
+
+/* Hide the browser's default radio button */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+/*custom radio End*/
+
+  /* LOGOUT BUTTON*/
+.button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+    margin: 10px;
+}
+
+.button2:hover {
+    background-color: #008CBA;
+    color: white;
+}
+.button3 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+}
+
+.button3:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/*logout*/
+.logoutLblPos{
+   position:relative;
+   right:10px;
+   top:5px;
+}
+/* LEFT MENU1 for tab1 */
+
+
+/* Style the tab */
+.tab1 {
+    float: left;
+    background: rgba(18, 205, 239, 0.4); 
+    width: 15%;
+    height: 80%;
+       
+}
+
+.tab1 button {
+    display: block;
+    background-color: inherit;
+    color: white;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 20px;
+}
+.tab1 button:hover {
+    background-color: grey;
+}
+.tab1 button.active {
+    background-color: yellowgreen;
+}
+.tabcontent1 {
+    display: block;
+    float: right;
+    padding: 0px 12px;
+    width: 82%;   
+   background: rgba(180, 205, 23, 0.3); 
+}
+/*END of left menu 1 tab*/
+
+/* Style the left tab2 */
+.tab2 {
+    float: left;
+    background: rgba(18, 205, 239, 0.4); 
+    width: 15%;
+    height: 80%;
+       
+}
+
+.tab2 button {
+    display: block;
+    background-color: inherit;
+    color: white;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 20px;
+}
+.tab2 button:hover {
+    background-color: grey;
+}
+.tab2 button.active {
+    background-color: yellowgreen;
+}
+.tabcontent2 {
+    float: right;
+    padding: 0px 12px;
+    width: 82%;   
+   background: rgba(180, 205, 23, 0.3); 
+}
+/*END of left menu 2 tab*/
+
+.tabcontent3 {
+    float: right;
+    padding: 0px 12px;
+    width: 100%;      
+   background: rgba(180, 205, 23, 0.3); 
+}
+
+/*contact us*/
+input[type=text],textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+ 
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width:50%;
+  position:relative;
+  left:25%;
+
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.contact {
+  border-radius: 8px;
+  background: rgba(180, 205, 23, 0.3);
+  padding: 20px;
+  position:relative;
+  left:auto;
+  font-weight:bold;
+}
